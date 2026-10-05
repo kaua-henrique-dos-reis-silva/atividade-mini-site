@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de preenchimento para inscrição em Aulas de História">
+    <title> Formulário de Inscrição para Aulas </title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: chocolate;"> Inscrição para Aulas </h1>
+        <nav style="font-family: 'Times New Roman', Times, serif; color: brown;">
+            <a href="index.html">Home</a> |
+            <a href="sobre.html">Sobre</a> |
+            <a href="contato.html">Contato</a>
+        </nav>
+        <p> Quer se aperfeiçoar na matéria de História para estudar e ingressar no <em>ENEM, vestibulares, provas e etc.</em>? Preencha o formulário abaixo com seus dados, e em breve, entraremos em contato com você. </p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2> Formulário </h2>
+            <form>
+                <fieldset style="border-radius: 20px; background-color: burlywood">
+                    <legend> <strong>Suas Informações</strong> </legend>
+                    <label for="nome"> Nome Completo </label> <br>
+                    <input type="text" name="nome" id="nome" style="border-radius: 10px;" placeholder="Seu Nome" required> <br>
+
+                    <label for="email"> Seu Email </label> <br>
+                    <input type="email" name="email" id="email" style="border-radius: 10px;" placeholder="Ex: seuemail@gmail.com" required> <br>
+
+                    <label for="tel"> Celular/Whatsapp </label> <br>
+                    <input type="tel" name="tel" id="tel" style="border-radius: 10px;" placeholder="Ex: (11) 98765-4321" required> <br>
+
+                    <label for="assunto">Assunto da mensagem:</label><br>
+                    <select id="assunto" name="assunto" style="border-radius: 10px;" required>
+                        <option value="" disabled selected>Selecione um assunto...</option>
+                        <option value="duvida">Dúvida sobre História</option>
+                        <option value="sugestao">Sugestão de conteúdo</option>
+                        <option value="elogio">Elogio ou Feedback</option>
+                        <option value="outro">Outro assunto</option>
+                    </select> <br>
+
+                    <label for="mensagem"> Seu Comentário </label> <br>
+                    <textarea name="mensagem" id="mensagem" maxlength="200" style="border-radius: 10px;" required></textarea> <br>
+
+                    <button type="submit" style="border-radius: 10px; font-family: 'Times New Roman', Times, serif; color: brown;"> Enviar Formulário </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 História em Dia — Todos os direitos autorais reservados.</p>
+    </footer>
+</body>
+
+</html>
